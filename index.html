@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="app.js" type="module"></script>
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="faq-component">
+      <div class="img-section">
+        <!-- the content of this component will be implemented by scrypt -->
+      </div>
+      <div class="content-section">
+        <h1>FAQ</h1>
+
+        <div class="questions-container">
+          <div class="extensible-component">
+            <div class="question-container">
+              <div>
+                <h3>How many team members can I invite?</h3>
+              </div>
+              <div class="expander">
+                <img src="images/icon-arrow-down.svg">
+              </div>
+            </div>
+            <div class="answer-container">
+              You can invite up to 2 additional users on the Free plan. There is no limit on team members for the
+              Premium
+              plan.
+            </div>
+          </div>
+
+          <div class="extensible-component active">
+            <div class="question-container">
+              <div>
+                <h3>What is the maximum file upload size?</h3>
+              </div>
+              <div class="expander">
+                <img src="images/icon-arrow-down.svg">
+              </div>
+            </div>
+            <div class="answer-container">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </div>
+          </div>
+
+          <div class="extensible-component">
+            <div class="question-container">
+              <div>
+                <h3>How do I reset my password?</h3>
+              </div>
+              <div class="expander">
+                <img src="images/icon-arrow-down.svg">
+              </div>
+            </div>
+            <div class="answer-container">
+              Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will
+              be
+              emailed to you.
+            </div>
+          </div>
+
+          <div class="extensible-component">
+            <div class="question-container">
+              <div>
+                <h3>Can I cancel my subscription?</h3>
+              </div>
+              <div class="expander">
+                <img src="images/icon-arrow-down.svg">
+              </div>
+            </div>
+            <div class="answer-container">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </div>
+          </div>
+
+          <div class="extensible-component">
+            <div class="question-container">
+              <div>
+                <h3>Do you provide additional support?</h3>
+              </div>
+              <div class="expander">
+                <img src="images/icon-arrow-down.svg">
+              </div>
+            </div>
+            <div class="answer-container">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">robster</a>.
+    </div>
+
+  </div>
+</body>
+
+</html>
