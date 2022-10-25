@@ -54,14 +54,37 @@ function setScreenMode() {
 }
 
 function handleClick(event) {
-    console.log(event.target);
     if (event.target.classList?.contains("question-container")) {
         const extensibleComponent = event.target.closest(".extensible-component");
+        if (extensibleComponent.classList.contains("active")) {
+            deactivateComponent(extensibleComponent);
+            return;
+        }
         const extensibleComponents = document.querySelectorAll(".extensible-component");
         const extensibleComponentsArr = Array.from(extensibleComponents);
         extensibleComponentsArr.forEach(element => {
-            if (element.classList.contains("active")) element.classList.remove("active");
+            deactivateComponent(element);
         });
-        extensibleComponent.classList.add("active");
+        activateComponent(extensibleComponent);
+    }
+}
+
+function activateComponent(component) {
+    component.classList.add("active");
+    const answerCnt = component.querySelector(".answer-container");
+    const finalHeight = answerCnt.scrollHeight;
+    answerCnt.style = ("height: 0");
+    requestAnimationFrame(() => {
+        answerCnt.style = ("height: " + finalHeight + "px");
+    })
+}
+
+function deactivateComponent(component) {
+    if (component.classList.contains("active")) {
+        component.classList.remove("active");
+        const answerCnt = component.querySelector(".answer-container");
+        requestAnimationFrame(() => {
+            answerCnt.style.height = "0px";
+        })
     }
 }
