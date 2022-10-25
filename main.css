@@ -55,7 +55,7 @@ h1 {
 
 .faq-component.desktop {
     grid-template-columns: 1fr 1fr;
-    max-width: 920px;
+    width: 920px;
     height: 500px;
     gap: 30px;
     align-items: center;
@@ -67,7 +67,6 @@ h1 {
     align-items: center;
     justify-items: right;
     overflow: hidden;
-    /* position: relative; */
 }
 
 .faq-component.desktop .img-section .img-cnt {
@@ -76,7 +75,6 @@ h1 {
     justify-items: right;
     height: 100%;
     width: 100%;
-    position: relative;
     transform: translateX(-13%);
 }
 
@@ -97,14 +95,9 @@ h1 {
 
 .faq-component.mobile {
     grid-template-rows: 100px 1fr;
-    width: fit-content;
     min-width: 335px;
     align-items: center;
     justify-items: center;
-}
-
-.faq-component.mobile .img-section {
-    overflow: visible;
 }
 
 .faq-component.mobile .img-section :first-child {
@@ -118,20 +111,18 @@ h1 {
 .content-section {
     overflow-y: auto;
     display: grid;
-    align-content: start;
+    align-content: start;gap: 15px;
 }
 
 .desktop .content-section {
     height: 359px;
     padding: 0 80px 0 10px;
-    gap: 15px;
 }
 
 .mobile .content-section {
     width: 330px;
     height: 450px;
     padding: 40px 20px;
-    gap: 5px;
 }
 
 .questions-container {
