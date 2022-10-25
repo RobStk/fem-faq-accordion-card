@@ -5,12 +5,15 @@ const imgSection = faqComponent.querySelector(".img-section");
 
 const imgMain = document.createElement("img");
 imgMain.src = "images/illustration-woman-online-desktop.svg";
+imgMain.classList.add("img-main");
 
 const imgShadow = document.createElement("img");
 imgShadow.src = "images/bg-pattern-desktop.svg";
+imgShadow.classList.add("img-shadow");
 
 const imgBox = document.createElement("img");
 imgBox.src = "images/illustration-box-desktop.svg";
+imgBox.classList.add("img-box");
 
 const imgMobile = document.createElement("img");
 imgMobile.src = "images/illustration-woman-online-mobile.svg";
@@ -18,17 +21,10 @@ imgMobile.src = "images/illustration-woman-online-mobile.svg";
 const imgMobileShadow = document.createElement("img");
 imgMobileShadow.src = "images/bg-pattern-mobile.svg";
 
-const mainImgCnt = document.createElement("div");
-mainImgCnt.classList.add("main-img-cnt");
-mainImgCnt.appendChild(imgMain);
-
-const boxImgCnt = document.createElement("div");
-boxImgCnt.classList.add("box-img-cnt");
-boxImgCnt.appendChild(imgBox);
-
-const shadowImgCnt = document.createElement("div");
-shadowImgCnt.classList.add("shadow-img-cnt");
-shadowImgCnt.appendChild(imgShadow);
+const imgCnt = document.createElement("div");
+imgCnt.classList.add("img-cnt");
+imgCnt.appendChild(imgMain);
+imgCnt.appendChild(imgShadow);
 
 setScreenMode();
 screenLargeQuery.addEventListener("change", setScreenMode);
@@ -40,10 +36,8 @@ function setScreenMode() {
         if (faqComponent.classList.contains("mobile")) faqComponent.classList.remove("mobile");
         faqComponent.classList.add("desktop");
         imgSection.innerHTML = "";
-
-        imgSection.appendChild(mainImgCnt);
-        imgSection.appendChild(shadowImgCnt);
-        imgSection.appendChild(boxImgCnt);
+        imgSection.appendChild(imgCnt);
+        imgSection.appendChild(imgBox);
     } else {
         if (faqComponent.classList.contains("desktop")) faqComponent.classList.remove("desktop");
         faqComponent.classList.add("mobile");

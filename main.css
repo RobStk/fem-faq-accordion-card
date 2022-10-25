@@ -62,37 +62,37 @@ h1 {
 }
 
 .faq-component.desktop .img-section {
-    height: 100%;
     display: grid;
-    grid-template-rows: 50% 50%;
+    height: 100%;
     align-items: center;
     justify-items: right;
     overflow: hidden;
+    /* position: relative; */
 }
 
-.faq-component.desktop .img-section .main-img-cnt {
-    z-index: 1;
+.faq-component.desktop .img-section .img-cnt {
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: translateX(-13%);
 }
 
-.faq-component.desktop .img-section .main-img-cnt img {
-    transform: translateX(-85px) translateY(33%);
-    z-index: 1;
-    overflow: hidden;
-}
-
-.faq-component.desktop .img-section .box-img-cnt {
-    overflow: visible;
+.faq-component.desktop .img-section .img-cnt img {
     position: absolute;
-    transform: translateX(-347px) translateY(22%);
-    z-index: 2;
 }
 
-.faq-component.desktop .img-section .shadow-img-cnt {
-    overflow: hidden;
+.faq-component.desktop .img-section .img-cnt .img-shadow {
+    transform: translateY(-8%);
+    z-index: -1;
 }
 
-.faq-component.desktop .img-section .shadow-img-cnt img {
-    transform: translateX(-85px) translateY(-22%);
+.faq-component.desktop .img-section .img-box {
+    position: absolute;
+    transform: translateX(-282%) translateY(-25%);
+    z-index: 1;
 }
 
 .faq-component.mobile {
