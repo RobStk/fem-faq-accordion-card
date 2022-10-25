@@ -20,11 +20,11 @@ imgBox.classList.add("img-box");
 
 const imgMobile = document.createElement("img");
 imgMobile.src = "images/illustration-woman-online-mobile.svg";
-imgMain.alt = "illustration woman online";
+imgMobile.alt = "illustration woman online";
 
 const imgMobileShadow = document.createElement("img");
 imgMobileShadow.src = "images/bg-pattern-mobile.svg";
-imgShadow.alt = "background shadow";
+imgMobileShadow.alt = "background shadow";
 
 const imgCnt = document.createElement("div");
 imgCnt.classList.add("img-cnt");
