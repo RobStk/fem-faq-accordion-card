@@ -5,21 +5,26 @@ const imgSection = faqComponent.querySelector(".img-section");
 
 const imgMain = document.createElement("img");
 imgMain.src = "images/illustration-woman-online-desktop.svg";
+imgMain.alt = "illustration woman online";
 imgMain.classList.add("img-main");
 
 const imgShadow = document.createElement("img");
 imgShadow.src = "images/bg-pattern-desktop.svg";
+imgShadow.alt = "background shadow";
 imgShadow.classList.add("img-shadow");
 
 const imgBox = document.createElement("img");
 imgBox.src = "images/illustration-box-desktop.svg";
+imgBox.alt = "box";
 imgBox.classList.add("img-box");
 
 const imgMobile = document.createElement("img");
 imgMobile.src = "images/illustration-woman-online-mobile.svg";
+imgMain.alt = "illustration woman online";
 
 const imgMobileShadow = document.createElement("img");
 imgMobileShadow.src = "images/bg-pattern-mobile.svg";
+imgShadow.alt = "background shadow";
 
 const imgCnt = document.createElement("div");
 imgCnt.classList.add("img-cnt");
